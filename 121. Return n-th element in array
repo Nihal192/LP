@@ -1,0 +1,9 @@
+# Return Type = int
+# Type of "array" = list[int]
+# Type of "n" = int
+
+def nth_element(array, n):
+    if len(array) <= n:
+        return -1
+    else:
+        return array[n]
