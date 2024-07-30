@@ -8,3 +8,9 @@ class Solution:
           if(target - v in d) :
               return(d[target-v],i)
           d[v] = i
+
+
+
+cbscvsvctvscs hfshcscscsskcnsucbusbc
+
+jbscbsbfyb
