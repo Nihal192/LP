@@ -1,0 +1,23 @@
+
+Date : 07/27/24  
+Name : Merge sorted array.
+Method : 2 while loop , one checks if helper variable M and N are greater then zero then checking nums1[m-1]>nums2[n-1].
+-  then we assign the nums1[last]=nums1[m-1]. "m-1" means the last element of helper variable M. decrement m by 1.
+- else assign nums1[last]= nums2[n-1]. "n-1" means the last element of helper variable N. , decrement n by 1.
+- last will also move forward in both cases so it will set to last-1
+- 2nd While Loop for n>0 if yes then nums1[last]=nums2[n-1], n-=1,last-=1
+
+Date: 07/21/24
+Name: Remove Element
+Mehtod:
+ - Declare a varibale that is set to zero
+ - now iterate through len(nums)
+ - check if nums[i] does not equal to val's value. if it doesnt then go ahead and assign the nums[i] to the nums of the declared varibale that you done earlier to zero.
+ - now decrement variable  by 1 as it will have to move through whole list
+ - return the varibale in line of for loop not in line of if loop
+
+
+
+
+Date :07/30/24  Name: Majority Element  Approach: sort the input , store lenght of input in some variable , return nums[n//2]. 
+where nums is input and n is var that has legth of input
