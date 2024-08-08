@@ -21,3 +21,22 @@ Mehtod:
 
 Date :07/30/24  Name: Majority Element  Approach: sort the input , store lenght of input in some variable , return nums[n//2]. 
 where nums is input and n is var that has legth of input
+
+
+
+Date:08/06/2024
+Name:Buy Sell Stock 1 (Easy)
+Method: 
+- first define L,R,MP . L=left pointer ,R = right pointer , mp = maximum profit
+- check if right pointer is less then total length of prices , i.e (while r<len(prices))
+- now check if prices[l]<prices[r] , if so then subrtact prices[r]-prices[l] and assign that to Profit.
+
+
+
+Date : 08/07/2024
+Name : Jump Game
+Mehtod:
+ - set goal at the end of nums i.e len(nums)-1
+ - now run loop in nums , set start ittreating from the End to Start.
+ - check if i+nums[i]>= goal , if yes then assign goal=i .
+ - return True if goal is 0 else False
