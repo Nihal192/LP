@@ -30,6 +30,9 @@ Method:
 - first define L,R,MP . L=left pointer ,R = right pointer , mp = maximum profit
 - check if right pointer is less then total length of prices , i.e (while r<len(prices))
 - now check if prices[l]<prices[r] , if so then subrtact prices[r]-prices[l] and assign that to Profit.
+- set maximum profit as maximum of (mp,profit)
+- now in case if prices[l] is not less then price[r], then we assign the l pointer to r to move further . i.e l=r and then increment the r pointer
+- at last under the for loop section return mp which is maximum profit
 
 
 
