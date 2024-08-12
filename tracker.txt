@@ -43,3 +43,13 @@ Mehtod:
  - now run loop in nums , set start ittreating from the End to Start.
  - check if i+nums[i]>= goal , if yes then assign goal=i .
  - return True if goal is 0 else False
+
+
+
+
+ Date 08/11/2024
+ Name : Ransom Problem
+
+ Method: 
+    - create two varibale (s1,s2)and asssign each of them  counter for both the strings ransomnote and magazine
+    -now compare if s1&s2 == s1 if yes then return True else False
