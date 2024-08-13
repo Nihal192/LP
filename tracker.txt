@@ -55,4 +55,9 @@ Mehtod:
     -now compare if s1&s2 == s1 if yes then return True else False
 
 
-Date
+Date : 08/12/24
+Name: Insert Delete GetRandom O(1)
+Method :
+   - you will be given 3 function skeleton 
+   - intialize the self.val  to set() function as we will use it for add and Remove
+   - inside add function look if we alreay have this element i.e 
