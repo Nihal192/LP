@@ -71,6 +71,6 @@ g = Game()
     
 #from_to_multiplication_table(5,10)
         
-#filter_starts_with(['ahmed','hassam','mohamed','ali'],'a')
+#filter_starts_with(['Patel','Nihal','Np','Nial'],'N')
 
-#name_with_length(['ahmed','ali','hassan'])
+#name_with_length(['Patel','Nihal','NP'])
