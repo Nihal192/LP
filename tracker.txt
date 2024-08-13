@@ -66,4 +66,4 @@ Method :
    - same goes for deletion , check if self.data in val then self.data.remove(val) , return True
    - else return False under if condition
 
-   - for random return use the simple method random. return random.
+   - for random return use the simple method random. donot forget to return it in list 
