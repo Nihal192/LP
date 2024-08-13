@@ -61,3 +61,6 @@ Method :
    - you will be given 3 function skeleton 
    - intialize the self.data  to set() function as we will use it for add and Remove i.e self.data =set
    - inside add function look if we alreay have this element i.e if val in self.data
+   - then if yes add it to set i.e self.data.remove(val) , return True
+               -  else return false under if statement
+   - same goes for deletion , check if self.data in val then self.data.remove(val)
