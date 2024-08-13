@@ -63,4 +63,7 @@ Method :
    - inside add function look if we alreay have this element i.e if val in self.data
    - then if yes add it to set i.e self.data.remove(val) , return True
                -  else return false under if statement
-   - same goes for deletion , check if self.data in val then self.data.remove(val)
+   - same goes for deletion , check if self.data in val then self.data.remove(val) , return True
+   - else return False under if condition
+
+   - for random method 
