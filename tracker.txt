@@ -67,3 +67,4 @@ Method :
    - else return False under if condition
 
    - for random return use the simple method random. donot forget to return it in list 
+   - i.e return random.choice(list(self.data))
