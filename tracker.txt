@@ -53,3 +53,6 @@ Mehtod:
  Method: 
     - create two varibale (s1,s2)and asssign each of them  counter for both the strings ransomnote and magazine
     -now compare if s1&s2 == s1 if yes then return True else False
+
+
+Date
