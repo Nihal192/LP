@@ -59,5 +59,5 @@ Date : 08/12/24
 Name: Insert Delete GetRandom O(1)
 Method :
    - you will be given 3 function skeleton 
-   - intialize the self.val  to set() function as we will use it for add and Remove
-   - inside add function look if we alreay have this element i.e 
+   - intialize the self.data  to set() function as we will use it for add and Remove i.e self.data =set
+   - inside add function look if we alreay have this element i.e if val in self.data
