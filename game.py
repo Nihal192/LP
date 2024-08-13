@@ -1,76 +1,36 @@
-'''
-    Game :
-        - start : welcome , options
-        - options to exit
-        - enter game number
-        - play again
-'''
+import os
 
-class Game:
-    def __init__(self):
-        while True:
-            print('''
-    welcome To Our Game , Enter Game Number
-        1 : Names With Length
-        2 : Filter starts with
-        3 : From To Multiplication Table
-        4 : to exit
-                  ''')
-            user_choice = int(input('Enter Game Number : '))
-            if user_choice == 1 :
-                names = input('Enter Names Seperatd by , : ')
-                names_list = names.split(',')
-                self.name_with_length(names_list)
-                
-                
-            elif user_choice == 2 :
-                names = input('Enter Names Seperatd by , : ')
-                char = input('Enter Char : ')
-                names_list = names.split(',')
-                self.filter_starts_with(names_list,char)
+def generate_directory_structure(root_dir, indent=''):
+    structure = []
+    items = os.listdir(root_dir)
+    items.sort()  # Sort items to maintain consistent order
 
-            elif user_choice == 3 :
-                start = int(input('Enter Start Number : '))
-                end = int(input('Enter End Number : '))
-                self.from_to_multiplication_table(start,end)
+    for index, item in enumerate(items):
+        full_path = os.path.join(root_dir, item)
+        is_last = index == len(items) - 1
+        marker = '└── ' if is_last else '├── '
+        structure.append(f"{indent}{marker}{item}")
 
-            elif user_choice == 4 :
-                return
+        if os.path.isdir(full_path):
+            if is_last:
+                structure.extend(generate_directory_structure(full_path, indent + '    '))
+            else:
+                structure.extend(generate_directory_structure(full_path, indent + '│   '))
 
+    return structure
 
-            play_again = input('Press any char to play again , n to exit')
-            if play_again == 'n':
-                break
+def write_directory_structure_to_file(root_dir, output_file):
+    structure = generate_directory_structure(root_dir)
+    with open(output_file, 'w', encoding='utf-8') as file:
+        try:
+            file.write("\n".join(structure))
+        except UnicodeEncodeError:
+            print("Error: Unable to write some characters to the file. Check your encoding settings.")
 
-    def name_with_length(self,names):
-        new_names = []
-        for n in names:
-            new_names.append(len(n))
-        print(new_names)
+# Example usage
+if __name__ == "__main__":
+    root_directory = os.path.dirname(os.path.abspath(__file__))  # The directory where this script is located
+    output_file = os.path.join(root_directory, 'directory_structure.txt')
 
-    def filter_starts_with(self,names,char):
-        new_names = []
-        for n in names:
-            if n.startswith(char):
-                new_names.append(n)
-        print(new_names)
-    
-
-    def from_to_multiplication_table(self,start,end):
-        for x in range(start,end+1):
-            for y in range(1,11):
-                print(f"{x} X {y} = {x*y}")
-            print('----------')
-
-
-g = Game()
-
-
-
-  
-    
-#from_to_multiplication_table(5,10)
-        
-#filter_starts_with(['Patel','Nihal','Np','Nial'],'N')
-
-#name_with_length(['Patel','Nihal','NP'])
+    write_directory_structure_to_file(root_directory, output_file)
+    print(f"Directory structure written to {output_file}")
