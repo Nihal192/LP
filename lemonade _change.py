@@ -13,4 +13,11 @@ def lemonade(bills):
                 return False
         else:
             if bills[i]==20 and ten>=1 and five>=1 :
-                
+                five-=1
+                ten-=1
+            elif five>=3:
+                five-=3
+            else:
+                return False
+    return 
+
