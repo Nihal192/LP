@@ -72,9 +72,12 @@ Method :
 
 
    Date : 08-14-24
-   
+
    Name : Lemonade Problem
    Method : 
          - Declare five and ten as var and assign them zero
          - run loop in bills i.e input
          - check if the bill is $5 dollar bill then increment the five variable.
+         - in elif check if the bill is $1o bill if yes then also check if $5 bill is more than 1 
+         - if bill is 20 and the 10 dollar bill is >1 and 5>1 then decrement10 by1 and 5 buy1
+         - if $5bill is greater then or equal to 3 then decrement 5 dollar by 3
