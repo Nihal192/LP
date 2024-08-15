@@ -68,3 +68,13 @@ Method :
 
    - for random return use the simple method random. donot forget to return it in list 
    - i.e return random.choice(list(self.data))
+
+
+
+   Date : 08-14-24
+   
+   Name : Lemonade Problem
+   Method : 
+         - Declare five and ten as var and assign them zero
+         - run loop in bills i.e input
+         - check if the bill is $5 dollar bill then increment the five variable.
